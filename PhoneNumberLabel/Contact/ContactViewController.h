@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ContactViewController.h
 //  PhoneNumberLabel
 //
 //  Created by Rex@JJS on 2017/8/2.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ContactViewController : UITableViewController
 
 
 @end
-

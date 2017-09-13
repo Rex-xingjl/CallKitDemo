@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>PhoneNumberHandler.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>PhoneNumberLabel.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>44139BE81F6280D0003AEA07</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>445C18471F31771E00C99C79</key>
 		<dict>
 			<key>primary</key>

@@ -7,17 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44050BA21F6789E000191E90 /* UITableViewCell+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 44050BA11F6789E000191E90 /* UITableViewCell+Create.m */; };
+		441365061F6662D100B9628D /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 441364FE1F6662D100B9628D /* SVIndefiniteAnimatedView.m */; };
+		441365071F6662D100B9628D /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 441365001F6662D100B9628D /* SVProgressAnimatedView.m */; };
+		441365081F6662D100B9628D /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 441365011F6662D100B9628D /* SVProgressHUD.bundle */; };
+		441365091F6662D100B9628D /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 441365031F6662D100B9628D /* SVProgressHUD.m */; };
+		4413650A1F6662D100B9628D /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 441365051F6662D100B9628D /* SVRadialGradientLayer.m */; };
+		4413650F1F66919E00B9628D /* CallBlockOrIDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4413650E1F66919E00B9628D /* CallBlockOrIDManager.m */; };
+		441365131F66943D00B9628D /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 441365121F66943D00B9628D /* UIView+ViewController.m */; };
+		44139BED1F6280D0003AEA07 /* CallDirectoryHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 44139BEC1F6280D0003AEA07 /* CallDirectoryHandler.m */; };
+		44139BF11F6280D0003AEA07 /* PhoneNumberHandler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 44139BE91F6280D0003AEA07 /* PhoneNumberHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		44139BFA1F62A1CC003AEA07 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44139BF91F62A1CC003AEA07 /* CoreTelephony.framework */; };
+		441DE7441F6913AB00109577 /* BlockContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = 441DE7431F6913AB00109577 /* BlockContactController.m */; };
+		441DE7471F69157800109577 /* BlockContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 441DE7461F69157800109577 /* BlockContactCell.m */; };
+		443A2A491F63C5E000C49A74 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A2A3F1F63C5E000C49A74 /* FMDatabase.m */; };
+		443A2A4A1F63C5E000C49A74 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A2A3F1F63C5E000C49A74 /* FMDatabase.m */; };
+		443A2A4B1F63C5E000C49A74 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A2A411F63C5E000C49A74 /* FMDatabaseAdditions.m */; };
+		443A2A4C1F63C5E000C49A74 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A2A411F63C5E000C49A74 /* FMDatabaseAdditions.m */; };
+		443A2A4D1F63C5E000C49A74 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A2A431F63C5E000C49A74 /* FMDatabasePool.m */; };
+		443A2A4E1F63C5E000C49A74 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A2A431F63C5E000C49A74 /* FMDatabasePool.m */; };
+		443A2A4F1F63C5E000C49A74 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A2A451F63C5E000C49A74 /* FMDatabaseQueue.m */; };
+		443A2A501F63C5E000C49A74 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A2A451F63C5E000C49A74 /* FMDatabaseQueue.m */; };
+		443A2A511F63C5E000C49A74 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A2A481F63C5E000C49A74 /* FMResultSet.m */; };
+		443A2A521F63C5E000C49A74 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A2A481F63C5E000C49A74 /* FMResultSet.m */; };
+		443A2A541F63C6B700C49A74 /* FMDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A2A531F63C6B700C49A74 /* FMDataBaseManager.m */; };
+		443A2A551F63C6B700C49A74 /* FMDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A2A531F63C6B700C49A74 /* FMDataBaseManager.m */; };
+		443A2A5A1F63C9C100C49A74 /* ContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A2A591F63C9C100C49A74 /* ContactModel.m */; };
+		443A2A5B1F63C9C100C49A74 /* ContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A2A591F63C9C100C49A74 /* ContactModel.m */; };
+		443A2A5F1F63CE9400C49A74 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 443A2A5E1F63CE9400C49A74 /* libsqlite3.tbd */; };
+		443A2A601F63D20500C49A74 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 443A2A5E1F63CE9400C49A74 /* libsqlite3.tbd */; };
 		445C184D1F31771E00C99C79 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 445C184C1F31771E00C99C79 /* main.m */; };
 		445C18501F31771E00C99C79 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 445C184F1F31771E00C99C79 /* AppDelegate.m */; };
-		445C18531F31771E00C99C79 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445C18521F31771E00C99C79 /* ViewController.m */; };
 		445C18561F31771E00C99C79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445C18541F31771E00C99C79 /* Main.storyboard */; };
 		445C18581F31771E00C99C79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 445C18571F31771E00C99C79 /* Assets.xcassets */; };
 		445C185B1F31771E00C99C79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445C18591F31771E00C99C79 /* LaunchScreen.storyboard */; };
 		445C18661F31771E00C99C79 /* PhoneNumberLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 445C18651F31771E00C99C79 /* PhoneNumberLabelTests.m */; };
 		445C18711F31771E00C99C79 /* PhoneNumberLabelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 445C18701F31771E00C99C79 /* PhoneNumberLabelUITests.m */; };
+		445C18921F31BE7200C99C79 /* ContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 445C188C1F31BE7200C99C79 /* ContactCell.m */; };
+		445C18931F31BE7200C99C79 /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445C188E1F31BE7200C99C79 /* ContactViewController.m */; };
+		445C18941F31BE7200C99C79 /* UIView+IBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 445C18911F31BE7200C99C79 /* UIView+IBExtension.m */; };
+		445C18981F31C2FB00C99C79 /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445C18971F31C2FB00C99C79 /* AddViewController.m */; };
+		445C189B1F31C32600C99C79 /* AddViewController+Touch.m in Sources */ = {isa = PBXBuildFile; fileRef = 445C189A1F31C32600C99C79 /* AddViewController+Touch.m */; };
+		445C189E1F31C65C00C99C79 /* AddViewController+Delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 445C189D1F31C65C00C99C79 /* AddViewController+Delegate.m */; };
+		445C18B21F31C85900C99C79 /* UITextField+LimitLength.m in Sources */ = {isa = PBXBuildFile; fileRef = 445C18B11F31C85900C99C79 /* UITextField+LimitLength.m */; };
+		445C18B61F31D1FE00C99C79 /* UIAlertController+Simplify.m in Sources */ = {isa = PBXBuildFile; fileRef = 445C18B51F31D1FE00C99C79 /* UIAlertController+Simplify.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		44139BEF1F6280D0003AEA07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 445C18401F31771E00C99C79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44139BE81F6280D0003AEA07;
+			remoteInfo = PhoneNumberHandler;
+		};
 		445C18621F31771E00C99C79 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 445C18401F31771E00C99C79 /* Project object */;
@@ -34,13 +77,69 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		44139BF51F6280D0003AEA07 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				44139BF11F6280D0003AEA07 /* PhoneNumberHandler.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		44050BA01F6789E000191E90 /* UITableViewCell+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Create.h"; sourceTree = "<group>"; };
+		44050BA11F6789E000191E90 /* UITableViewCell+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Create.m"; sourceTree = "<group>"; };
+		441364FD1F6662D100B9628D /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		441364FE1F6662D100B9628D /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		441364FF1F6662D100B9628D /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		441365001F6662D100B9628D /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		441365011F6662D100B9628D /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		441365021F6662D100B9628D /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		441365031F6662D100B9628D /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		441365041F6662D100B9628D /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		441365051F6662D100B9628D /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		4413650B1F66897500B9628D /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		4413650D1F66919E00B9628D /* CallBlockOrIDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallBlockOrIDManager.h; sourceTree = "<group>"; };
+		4413650E1F66919E00B9628D /* CallBlockOrIDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallBlockOrIDManager.m; sourceTree = "<group>"; };
+		441365111F66943D00B9628D /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
+		441365121F66943D00B9628D /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
+		44139BE91F6280D0003AEA07 /* PhoneNumberHandler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PhoneNumberHandler.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		44139BEB1F6280D0003AEA07 /* CallDirectoryHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallDirectoryHandler.h; sourceTree = "<group>"; };
+		44139BEC1F6280D0003AEA07 /* CallDirectoryHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallDirectoryHandler.m; sourceTree = "<group>"; };
+		44139BEE1F6280D0003AEA07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44139BF61F6280F1003AEA07 /* PhoneNumberHandler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhoneNumberHandler.entitlements; sourceTree = "<group>"; };
+		44139BF71F62815E003AEA07 /* PhoneNumberLabel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhoneNumberLabel.entitlements; sourceTree = "<group>"; };
+		44139BF91F62A1CC003AEA07 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		441DE7421F6913AB00109577 /* BlockContactController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockContactController.h; sourceTree = "<group>"; };
+		441DE7431F6913AB00109577 /* BlockContactController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockContactController.m; sourceTree = "<group>"; };
+		441DE7451F69157800109577 /* BlockContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockContactCell.h; sourceTree = "<group>"; };
+		441DE7461F69157800109577 /* BlockContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockContactCell.m; sourceTree = "<group>"; };
+		443A2A3E1F63C5E000C49A74 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		443A2A3F1F63C5E000C49A74 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		443A2A401F63C5E000C49A74 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		443A2A411F63C5E000C49A74 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		443A2A421F63C5E000C49A74 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		443A2A431F63C5E000C49A74 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		443A2A441F63C5E000C49A74 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		443A2A451F63C5E000C49A74 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		443A2A461F63C5E000C49A74 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		443A2A471F63C5E000C49A74 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		443A2A481F63C5E000C49A74 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		443A2A531F63C6B700C49A74 /* FMDataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDataBaseManager.m; sourceTree = "<group>"; };
+		443A2A561F63C6C100C49A74 /* FMDataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDataBaseManager.h; sourceTree = "<group>"; };
+		443A2A581F63C9C100C49A74 /* ContactModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactModel.h; sourceTree = "<group>"; };
+		443A2A591F63C9C100C49A74 /* ContactModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactModel.m; sourceTree = "<group>"; };
+		443A2A5C1F63CE7C00C49A74 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		443A2A5E1F63CE9400C49A74 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		445C18481F31771E00C99C79 /* PhoneNumberLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneNumberLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		445C184C1F31771E00C99C79 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		445C184E1F31771E00C99C79 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		445C184F1F31771E00C99C79 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		445C18511F31771E00C99C79 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		445C18521F31771E00C99C79 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		445C18551F31771E00C99C79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		445C18571F31771E00C99C79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		445C185A1F31771E00C99C79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,13 +150,40 @@
 		445C186C1F31771E00C99C79 /* PhoneNumberLabelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhoneNumberLabelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		445C18701F31771E00C99C79 /* PhoneNumberLabelUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneNumberLabelUITests.m; sourceTree = "<group>"; };
 		445C18721F31771E00C99C79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		445C188B1F31BE7200C99C79 /* ContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactCell.h; sourceTree = "<group>"; };
+		445C188C1F31BE7200C99C79 /* ContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactCell.m; sourceTree = "<group>"; };
+		445C188D1F31BE7200C99C79 /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
+		445C188E1F31BE7200C99C79 /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
+		445C18901F31BE7200C99C79 /* UIView+IBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+IBExtension.h"; sourceTree = "<group>"; };
+		445C18911F31BE7200C99C79 /* UIView+IBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+IBExtension.m"; sourceTree = "<group>"; };
+		445C18961F31C2FB00C99C79 /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		445C18971F31C2FB00C99C79 /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		445C18991F31C32600C99C79 /* AddViewController+Touch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AddViewController+Touch.h"; sourceTree = "<group>"; };
+		445C189A1F31C32600C99C79 /* AddViewController+Touch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AddViewController+Touch.m"; sourceTree = "<group>"; };
+		445C189C1F31C65C00C99C79 /* AddViewController+Delegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AddViewController+Delegate.h"; sourceTree = "<group>"; };
+		445C189D1F31C65C00C99C79 /* AddViewController+Delegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AddViewController+Delegate.m"; sourceTree = "<group>"; };
+		445C18B01F31C85900C99C79 /* UITextField+LimitLength.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+LimitLength.h"; sourceTree = "<group>"; };
+		445C18B11F31C85900C99C79 /* UITextField+LimitLength.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+LimitLength.m"; sourceTree = "<group>"; };
+		445C18B31F31D11700C99C79 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		445C18B41F31D1FE00C99C79 /* UIAlertController+Simplify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Simplify.h"; sourceTree = "<group>"; };
+		445C18B51F31D1FE00C99C79 /* UIAlertController+Simplify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Simplify.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		44139BE61F6280D0003AEA07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				443A2A601F63D20500C49A74 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		445C18451F31771E00C99C79 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				443A2A5F1F63CE9400C49A74 /* libsqlite3.tbd in Frameworks */,
+				44139BFA1F62A1CC003AEA07 /* CoreTelephony.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +204,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		441364FC1F6662D100B9628D /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				441364FD1F6662D100B9628D /* SVIndefiniteAnimatedView.h */,
+				441364FE1F6662D100B9628D /* SVIndefiniteAnimatedView.m */,
+				441364FF1F6662D100B9628D /* SVProgressAnimatedView.h */,
+				441365001F6662D100B9628D /* SVProgressAnimatedView.m */,
+				441365011F6662D100B9628D /* SVProgressHUD.bundle */,
+				441365021F6662D100B9628D /* SVProgressHUD.h */,
+				441365031F6662D100B9628D /* SVProgressHUD.m */,
+				441365041F6662D100B9628D /* SVRadialGradientLayer.h */,
+				441365051F6662D100B9628D /* SVRadialGradientLayer.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		44139BEA1F6280D0003AEA07 /* PhoneNumberHandler */ = {
+			isa = PBXGroup;
+			children = (
+				44139BF61F6280F1003AEA07 /* PhoneNumberHandler.entitlements */,
+				44139BEB1F6280D0003AEA07 /* CallDirectoryHandler.h */,
+				44139BEC1F6280D0003AEA07 /* CallDirectoryHandler.m */,
+				44139BEE1F6280D0003AEA07 /* Info.plist */,
+			);
+			path = PhoneNumberHandler;
+			sourceTree = "<group>";
+		};
+		44139BF81F62A1CB003AEA07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				443A2A5E1F63CE9400C49A74 /* libsqlite3.tbd */,
+				443A2A5C1F63CE7C00C49A74 /* libsqlite3.0.tbd */,
+				44139BF91F62A1CC003AEA07 /* CoreTelephony.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		443A2A3D1F63C5E000C49A74 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				443A2A3E1F63C5E000C49A74 /* FMDatabase.h */,
+				443A2A3F1F63C5E000C49A74 /* FMDatabase.m */,
+				443A2A401F63C5E000C49A74 /* FMDatabaseAdditions.h */,
+				443A2A411F63C5E000C49A74 /* FMDatabaseAdditions.m */,
+				443A2A421F63C5E000C49A74 /* FMDatabasePool.h */,
+				443A2A431F63C5E000C49A74 /* FMDatabasePool.m */,
+				443A2A441F63C5E000C49A74 /* FMDatabaseQueue.h */,
+				443A2A451F63C5E000C49A74 /* FMDatabaseQueue.m */,
+				443A2A461F63C5E000C49A74 /* FMDB.h */,
+				443A2A471F63C5E000C49A74 /* FMResultSet.h */,
+				443A2A481F63C5E000C49A74 /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		443A2A571F63C8EF00C49A74 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				443A2A581F63C9C100C49A74 /* ContactModel.h */,
+				443A2A591F63C9C100C49A74 /* ContactModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		445C183F1F31771E00C99C79 = {
 			isa = PBXGroup;
 			children = (
 				445C184A1F31771E00C99C79 /* PhoneNumberLabel */,
 				445C18641F31771E00C99C79 /* PhoneNumberLabelTests */,
 				445C186F1F31771E00C99C79 /* PhoneNumberLabelUITests */,
+				44139BEA1F6280D0003AEA07 /* PhoneNumberHandler */,
 				445C18491F31771E00C99C79 /* Products */,
+				44139BF81F62A1CB003AEA07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +286,7 @@
 				445C18481F31771E00C99C79 /* PhoneNumberLabel.app */,
 				445C18611F31771E00C99C79 /* PhoneNumberLabelTests.xctest */,
 				445C186C1F31771E00C99C79 /* PhoneNumberLabelUITests.xctest */,
+				44139BE91F6280D0003AEA07 /* PhoneNumberHandler.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,14 +294,17 @@
 		445C184A1F31771E00C99C79 /* PhoneNumberLabel */ = {
 			isa = PBXGroup;
 			children = (
+				44139BF71F62815E003AEA07 /* PhoneNumberLabel.entitlements */,
+				443A2A571F63C8EF00C49A74 /* Model */,
+				445C18A01F31C82C00C99C79 /* Library */,
+				445C188F1F31BE7200C99C79 /* Utils */,
+				445C188A1F31BE7200C99C79 /* Contact */,
+				445C18951F31C2FB00C99C79 /* AddNumbers */,
 				445C184E1F31771E00C99C79 /* AppDelegate.h */,
 				445C184F1F31771E00C99C79 /* AppDelegate.m */,
-				445C18511F31771E00C99C79 /* ViewController.h */,
-				445C18521F31771E00C99C79 /* ViewController.m */,
-				445C18541F31771E00C99C79 /* Main.storyboard */,
 				445C18571F31771E00C99C79 /* Assets.xcassets */,
+				445C18541F31771E00C99C79 /* Main.storyboard */,
 				445C18591F31771E00C99C79 /* LaunchScreen.storyboard */,
-				445C185C1F31771E00C99C79 /* Info.plist */,
 				445C184B1F31771E00C99C79 /* Supporting Files */,
 			);
 			path = PhoneNumberLabel;
@@ -117,7 +313,10 @@
 		445C184B1F31771E00C99C79 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				445C185C1F31771E00C99C79 /* Info.plist */,
 				445C184C1F31771E00C99C79 /* main.m */,
+				445C18B31F31D11700C99C79 /* PrefixHeader.pch */,
+				4413650B1F66897500B9628D /* Constant.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -140,9 +339,84 @@
 			path = PhoneNumberLabelUITests;
 			sourceTree = "<group>";
 		};
+		445C188A1F31BE7200C99C79 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				445C188B1F31BE7200C99C79 /* ContactCell.h */,
+				445C188C1F31BE7200C99C79 /* ContactCell.m */,
+				445C188D1F31BE7200C99C79 /* ContactViewController.h */,
+				445C188E1F31BE7200C99C79 /* ContactViewController.m */,
+				441DE7451F69157800109577 /* BlockContactCell.h */,
+				441DE7461F69157800109577 /* BlockContactCell.m */,
+				441DE7421F6913AB00109577 /* BlockContactController.h */,
+				441DE7431F6913AB00109577 /* BlockContactController.m */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		445C188F1F31BE7200C99C79 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				44050BA01F6789E000191E90 /* UITableViewCell+Create.h */,
+				44050BA11F6789E000191E90 /* UITableViewCell+Create.m */,
+				441365111F66943D00B9628D /* UIView+ViewController.h */,
+				441365121F66943D00B9628D /* UIView+ViewController.m */,
+				443A2A561F63C6C100C49A74 /* FMDataBaseManager.h */,
+				443A2A531F63C6B700C49A74 /* FMDataBaseManager.m */,
+				445C18B41F31D1FE00C99C79 /* UIAlertController+Simplify.h */,
+				445C18B51F31D1FE00C99C79 /* UIAlertController+Simplify.m */,
+				445C18B01F31C85900C99C79 /* UITextField+LimitLength.h */,
+				445C18B11F31C85900C99C79 /* UITextField+LimitLength.m */,
+				445C18901F31BE7200C99C79 /* UIView+IBExtension.h */,
+				445C18911F31BE7200C99C79 /* UIView+IBExtension.m */,
+				4413650D1F66919E00B9628D /* CallBlockOrIDManager.h */,
+				4413650E1F66919E00B9628D /* CallBlockOrIDManager.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		445C18951F31C2FB00C99C79 /* AddNumbers */ = {
+			isa = PBXGroup;
+			children = (
+				445C18961F31C2FB00C99C79 /* AddViewController.h */,
+				445C18971F31C2FB00C99C79 /* AddViewController.m */,
+				445C18991F31C32600C99C79 /* AddViewController+Touch.h */,
+				445C189A1F31C32600C99C79 /* AddViewController+Touch.m */,
+				445C189C1F31C65C00C99C79 /* AddViewController+Delegate.h */,
+				445C189D1F31C65C00C99C79 /* AddViewController+Delegate.m */,
+			);
+			path = AddNumbers;
+			sourceTree = "<group>";
+		};
+		445C18A01F31C82C00C99C79 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				441364FC1F6662D100B9628D /* SVProgressHUD */,
+				443A2A3D1F63C5E000C49A74 /* fmdb */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		44139BE81F6280D0003AEA07 /* PhoneNumberHandler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44139BF41F6280D0003AEA07 /* Build configuration list for PBXNativeTarget "PhoneNumberHandler" */;
+			buildPhases = (
+				44139BE51F6280D0003AEA07 /* Sources */,
+				44139BE61F6280D0003AEA07 /* Frameworks */,
+				44139BE71F6280D0003AEA07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhoneNumberHandler;
+			productName = PhoneNumberHandler;
+			productReference = 44139BE91F6280D0003AEA07 /* PhoneNumberHandler.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		445C18471F31771E00C99C79 /* PhoneNumberLabel */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 445C18751F31771E00C99C79 /* Build configuration list for PBXNativeTarget "PhoneNumberLabel" */;
@@ -150,10 +424,12 @@
 				445C18441F31771E00C99C79 /* Sources */,
 				445C18451F31771E00C99C79 /* Frameworks */,
 				445C18461F31771E00C99C79 /* Resources */,
+				44139BF51F6280D0003AEA07 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				44139BF01F6280D0003AEA07 /* PBXTargetDependency */,
 			);
 			name = PhoneNumberLabel;
 			productName = PhoneNumberLabel;
@@ -205,10 +481,25 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Rex;
 				TargetAttributes = {
+					44139BE81F6280D0003AEA07 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = KB5L23C33F;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					445C18471F31771E00C99C79 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = KB5L23C33F;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					445C18601F31771E00C99C79 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -240,11 +531,19 @@
 				445C18471F31771E00C99C79 /* PhoneNumberLabel */,
 				445C18601F31771E00C99C79 /* PhoneNumberLabelTests */,
 				445C186B1F31771E00C99C79 /* PhoneNumberLabelUITests */,
+				44139BE81F6280D0003AEA07 /* PhoneNumberHandler */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		44139BE71F6280D0003AEA07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		445C18461F31771E00C99C79 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -252,6 +551,7 @@
 				445C185B1F31771E00C99C79 /* LaunchScreen.storyboard in Resources */,
 				445C18581F31771E00C99C79 /* Assets.xcassets in Resources */,
 				445C18561F31771E00C99C79 /* Main.storyboard in Resources */,
+				441365081F6662D100B9628D /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,13 +572,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		44139BE51F6280D0003AEA07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				443A2A521F63C5E000C49A74 /* FMResultSet.m in Sources */,
+				443A2A551F63C6B700C49A74 /* FMDataBaseManager.m in Sources */,
+				443A2A501F63C5E000C49A74 /* FMDatabaseQueue.m in Sources */,
+				44139BED1F6280D0003AEA07 /* CallDirectoryHandler.m in Sources */,
+				443A2A4E1F63C5E000C49A74 /* FMDatabasePool.m in Sources */,
+				443A2A4A1F63C5E000C49A74 /* FMDatabase.m in Sources */,
+				443A2A5B1F63C9C100C49A74 /* ContactModel.m in Sources */,
+				443A2A4C1F63C5E000C49A74 /* FMDatabaseAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		445C18441F31771E00C99C79 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				445C18531F31771E00C99C79 /* ViewController.m in Sources */,
+				445C18931F31BE7200C99C79 /* ContactViewController.m in Sources */,
+				445C18B21F31C85900C99C79 /* UITextField+LimitLength.m in Sources */,
+				443A2A491F63C5E000C49A74 /* FMDatabase.m in Sources */,
+				44050BA21F6789E000191E90 /* UITableViewCell+Create.m in Sources */,
+				445C18921F31BE7200C99C79 /* ContactCell.m in Sources */,
+				443A2A511F63C5E000C49A74 /* FMResultSet.m in Sources */,
+				445C18B61F31D1FE00C99C79 /* UIAlertController+Simplify.m in Sources */,
+				443A2A4B1F63C5E000C49A74 /* FMDatabaseAdditions.m in Sources */,
+				4413650A1F6662D100B9628D /* SVRadialGradientLayer.m in Sources */,
+				443A2A5A1F63C9C100C49A74 /* ContactModel.m in Sources */,
+				445C18981F31C2FB00C99C79 /* AddViewController.m in Sources */,
 				445C18501F31771E00C99C79 /* AppDelegate.m in Sources */,
+				441365071F6662D100B9628D /* SVProgressAnimatedView.m in Sources */,
 				445C184D1F31771E00C99C79 /* main.m in Sources */,
+				441DE7471F69157800109577 /* BlockContactCell.m in Sources */,
+				441365061F6662D100B9628D /* SVIndefiniteAnimatedView.m in Sources */,
+				445C189E1F31C65C00C99C79 /* AddViewController+Delegate.m in Sources */,
+				445C189B1F31C32600C99C79 /* AddViewController+Touch.m in Sources */,
+				445C18941F31BE7200C99C79 /* UIView+IBExtension.m in Sources */,
+				4413650F1F66919E00B9628D /* CallBlockOrIDManager.m in Sources */,
+				441DE7441F6913AB00109577 /* BlockContactController.m in Sources */,
+				443A2A4D1F63C5E000C49A74 /* FMDatabasePool.m in Sources */,
+				441365131F66943D00B9628D /* UIView+ViewController.m in Sources */,
+				441365091F6662D100B9628D /* SVProgressHUD.m in Sources */,
+				443A2A4F1F63C5E000C49A74 /* FMDatabaseQueue.m in Sources */,
+				443A2A541F63C6B700C49A74 /* FMDataBaseManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +639,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		44139BF01F6280D0003AEA07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44139BE81F6280D0003AEA07 /* PhoneNumberHandler */;
+			targetProxy = 44139BEF1F6280D0003AEA07 /* PBXContainerItemProxy */;
+		};
 		445C18631F31771E00C99C79 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 445C18471F31771E00C99C79 /* PhoneNumberLabel */;
@@ -333,6 +676,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		44139BF21F6280D0003AEA07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = PhoneNumberHandler/PhoneNumberHandler.entitlements;
+				DEVELOPMENT_TEAM = KB5L23C33F;
+				INFOPLIST_FILE = PhoneNumberHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rex.NumberLabel.PhoneNumberHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		44139BF31F6280D0003AEA07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = PhoneNumberHandler/PhoneNumberHandler.entitlements;
+				DEVELOPMENT_TEAM = KB5L23C33F;
+				INFOPLIST_FILE = PhoneNumberHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rex.NumberLabel.PhoneNumberHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		445C18731F31771E00C99C79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -429,11 +800,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PhoneNumberLabel/PhoneNumberLabel.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = KB5L23C33F;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PhoneNumberLabel/PrefixHeader.pch";
 				INFOPLIST_FILE = PhoneNumberLabel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Rex.PhoneNumberLabel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rex.NumberLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -441,11 +817,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PhoneNumberLabel/PhoneNumberLabel.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = KB5L23C33F;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PhoneNumberLabel/PrefixHeader.pch";
 				INFOPLIST_FILE = PhoneNumberLabel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Rex.PhoneNumberLabel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rex.NumberLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -502,6 +883,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		44139BF41F6280D0003AEA07 /* Build configuration list for PBXNativeTarget "PhoneNumberHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44139BF21F6280D0003AEA07 /* Debug */,
+				44139BF31F6280D0003AEA07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		445C18431F31771E00C99C79 /* Build configuration list for PBXProject "PhoneNumberLabel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -518,6 +908,7 @@
 				445C18771F31771E00C99C79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		445C18781F31771E00C99C79 /* Build configuration list for PBXNativeTarget "PhoneNumberLabelTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +917,7 @@
 				445C187A1F31771E00C99C79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		445C187B1F31771E00C99C79 /* Build configuration list for PBXNativeTarget "PhoneNumberLabelUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +926,7 @@
 				445C187D1F31771E00C99C79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
