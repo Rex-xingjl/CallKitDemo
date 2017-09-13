@@ -44,19 +44,29 @@
 
 - (IBAction)addBtnAction:(UIButton *)sender {
     [self.view endEditing:YES];
-    if (self.tagMarkTF.text.length <= 0 ||
-        self.phoneNumberTF.text.length <= 0 ||
+    
+    if (self.phoneNumberTF.text.length <= 0 ||
         self.nationalIDTF.text.length <= 0) {
-        [SVProgressHUD showInfoWithStatus:@"One of input is empty"];
+        [SVProgressHUD showInfoWithStatus:@"One of number is empty"];
         return;
     }
+    if (self.blockSwitch.on == NO &&
+        self.tagMarkTF.text.length <= 0) {
+        [SVProgressHUD showInfoWithStatus:@"Identification is empty"];
+        return;
+    }
+
     NSString * phoneNumber = [NSString stringWithFormat:@"%@%@", self.nationalIDTF.text, self.phoneNumberTF.text];
     
-    [[CallBlockOrIDManager shared] addIdentification:self.tagMarkTF.text toNumber:phoneNumber complete:^(BOOL finish) {
-        if (finish && self.blockSwitch.on == YES) {
-            [[CallBlockOrIDManager shared] addBlockNumber:phoneNumber complete:nil];
-        }
-    }];
+    if (self.tagMarkTF.text.length <= 0) {
+        [[CallBlockOrIDManager shared] addBlockNumber:phoneNumber complete:nil];
+    } else {
+        [[CallBlockOrIDManager shared] addIdentification:self.tagMarkTF.text toNumber:phoneNumber complete:^(BOOL finish) {
+            if (finish && self.blockSwitch.on == YES) {
+                [[CallBlockOrIDManager shared] addBlockNumber:phoneNumber complete:nil];
+            }
+        }];
+    }
 }
 
 - (IBAction)tagMarkContactsBtnAction:(UIButton *)sender {
