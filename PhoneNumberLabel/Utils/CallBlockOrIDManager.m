@@ -31,39 +31,25 @@ typedef enum : NSUInteger {
 }
 
 - (void)addIdentification:(NSString *)ID toNumber:(NSString *)number complete:(void(^)(BOOL finish))block {
-    [self permissionStatusConfirm:^(bool allow) {
-        if (allow) {
-            [self manage:IDNumberManageAdd toNumber:number withID:ID complete:(void(^)(BOOL finish))block];
-        } else {
-            if (block) block(NO);
-        }
-    }];
+    [self getPM_manage:IDNumberManageAdd number:number Id:ID complete:block];
 }
 
 - (void)removeIdentificationForNumber:(NSString *)number complete:(void(^)(BOOL finish))block {
-    [self permissionStatusConfirm:^(bool allow) {
-        if (allow) {
-            [self manage:IDNumberManageDelete toNumber:number withID:@"" complete:(void(^)(BOOL finish))block];
-        } else {
-           if (block) block(NO);
-        }
-    }];
+    [self getPM_manage:IDNumberManageDelete number:number Id:@"" complete:block];
 }
 
 - (void)addBlockNumber:(NSString *)number complete:(void(^)(BOOL finish))block {
-    [self permissionStatusConfirm:^(bool allow) {
-        if (allow) {
-            [self manage:BlockNumberManageAdd toNumber:number withID:@"" complete:(void(^)(BOOL finish))block];
-        } else {
-            if (block) block(NO);
-        }
-    }];
+    [self getPM_manage:BlockNumberManageAdd number:number Id:@"" complete:block];
 }
 
 - (void)removeBlockNumber:(NSString *)number complete:(void(^)(BOOL finish))block {
+    [self getPM_manage:BlockNumberManageDelete number:number Id:@"" complete:block];
+}
+
+- (void)getPM_manage:(NumberManage)mange number:(NSString *)number Id:(NSString *)Id complete:(void(^)(BOOL finish))block {
     [self permissionStatusConfirm:^(bool allow) {
         if (allow) {
-            [self manage:BlockNumberManageDelete toNumber:number withID:@"" complete:(void(^)(BOOL finish))block];
+            [self manage:mange toNumber:number withID:Id complete:block];
         } else {
             if (block) block(NO);
         }
