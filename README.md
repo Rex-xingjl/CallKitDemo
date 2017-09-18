@@ -4,7 +4,7 @@ A demo to show the intact process to add indentifications for phonenumber or blo
 
 一个展示如何添加号码识别以及号码屏蔽的完整demo
 
-# tips
+# Tips
 
 1. If the phonenumber is in your iphone contacts, the identification function is useless.
 2. If block a phonenumber, you won't see the incoming call.
