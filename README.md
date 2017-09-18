@@ -28,3 +28,5 @@ ____________________
 It's easy to add to any app. 
 
 很容易集成
+
+[jianshu]http://www.jianshu.com/p/510c8da9848c
