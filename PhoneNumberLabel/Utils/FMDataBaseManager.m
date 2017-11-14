@@ -29,7 +29,7 @@
       
       NSURL *containerURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.RexLocalGroup"];
       containerURL = [containerURL URLByAppendingPathComponent:@"Library/"];
-      NSString * dbPath = [NSString stringWithFormat:@"%@%@",containerURL.absoluteString, @"LocalNumberDB.sqlite"];
+      NSString * dbPath = [NSString stringWithFormat:@"%@/%@",containerURL.absoluteString, @"LocalNumberDB.sqlite"];
       _dbQueue = [FMDatabaseQueue databaseQueueWithPath:dbPath];
     if (_dbQueue) {
         [self createTableIfNotExists:kNumberTable];
