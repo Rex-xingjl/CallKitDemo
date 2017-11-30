@@ -46,7 +46,7 @@ And also don't forget modify this ExtentionApp BundleIdentifier in CallBlockOrID
 ![extensionIdentifier](HelperImages/extensionIdentifier.png "extensionIdentifier")
 
 ### 2. Database Path And App Groups
-###    数据库路径和应用组
+###    数据库路径和应用组(数据共享)
 
 DB path use the App Groups name as a part, so you should change the name.
 
