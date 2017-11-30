@@ -23,6 +23,30 @@ A demo to show the intact process to add indentifications for phonenumber or blo
 6. 最大数量在100万到200万之间，原因可能是超时无效
 7. 目前好像只能全量更新数据，不能增量更新，效率比较低
 
+# How to launch the Demo
+
+well, you need modify some setting, make sure the demo can build in your iPhone.
+
+1. MainApp BundleIdentifier and ExtentionApp BundleIdentifier
+
+Rule -> "ExtensionApp_BundleIdentifier = MainApp_BundleIdentifier + ExtensionApp_TargetName"
+
+![mainAppBundleID](mainAppBundleID.png "mainAppBundleID")
+![extensionAppBundleID](extensionAppBundleID.png "extensionAppBundleID")
+
+And also don't forget modify this ExtentionApp BundleIdentifier in CallBlockOrIDManager.m
+
+![extensionIdentifier](extensionIdentifier.png "extensionIdentifier")
+
+2. Database Path 
+
+DB path use the App Groups name as a part, so you should change the name.
+Click the "+" button to add your new own group, name should be "group.xxxxx".
+
+![groupNameSetting](groupNameSetting.png "groupNameSetting")
+![groupNameIdentifier](groupNameIdentifier.png "groupNameIdentifier")
+
+
 ____________________
 
 It's easy to add to any app. 
