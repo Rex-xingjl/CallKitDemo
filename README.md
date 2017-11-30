@@ -31,20 +31,20 @@ well, you need modify some setting, make sure the demo can build in your iPhone.
 
 Rule -> "ExtensionApp_BundleIdentifier = MainApp_BundleIdentifier + ExtensionApp_TargetName"
 
-![mainAppBundleID](mainAppBundleID.png "mainAppBundleID")
-![extensionAppBundleID](extensionAppBundleID.png "extensionAppBundleID")
+![mainAppBundleID](HelperImages/mainAppBundleID.png "mainAppBundleID")
+![extensionAppBundleID](HelperImages/extensionAppBundleID.png "extensionAppBundleID")
 
 And also don't forget modify this ExtentionApp BundleIdentifier in CallBlockOrIDManager.m
 
-![extensionIdentifier](extensionIdentifier.png "extensionIdentifier")
+![extensionIdentifier](HelperImages/extensionIdentifier.png "extensionIdentifier")
 
 2. Database Path 
 
 DB path use the App Groups name as a part, so you should change the name.
 Click the "+" button to add your new own group, name should be "group.xxxxx".
 
-![groupNameSetting](groupNameSetting.png "groupNameSetting")
-![groupNameIdentifier](groupNameIdentifier.png "groupNameIdentifier")
+![groupNameSetting](HelperImages/groupNameSetting.png "groupNameSetting")
+![groupNameIdentifier](HelperImages/groupNameIdentifier.png "groupNameIdentifier")
 
 
 ____________________
