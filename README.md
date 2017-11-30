@@ -25,7 +25,8 @@ A demo to show the intact process to add indentifications for phonenumber or blo
 
 # How to launch the Demo
 
-well, you need modify some setting, make sure the demo can build in your iPhone.
+Well, you need modify some setting, make sure the demo can build in your iPhone.
+
 你只需要改一些东西就可以真机运行了，模拟器无法测试该功能。
 
 ### 1. MainApp BundleIdentifier and ExtentionApp BundleIdentifier 
