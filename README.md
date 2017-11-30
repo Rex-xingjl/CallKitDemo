@@ -26,9 +26,10 @@ A demo to show the intact process to add indentifications for phonenumber or blo
 # How to launch the Demo
 
 well, you need modify some setting, make sure the demo can build in your iPhone.
+你只需要改一些东西就可以真机运行了，模拟器无法测试该功能。
 
-1. MainApp BundleIdentifier and ExtentionApp BundleIdentifier 
-   主应用id 和 扩展应用id
+### 1. MainApp BundleIdentifier and ExtentionApp BundleIdentifier 
+###    主应用id和扩展应用id
 
 Rule -> "ExtensionApp_BundleIdentifier = MainApp_BundleIdentifier + ExtensionApp_TargetName"
 
@@ -43,12 +44,15 @@ And also don't forget modify this ExtentionApp BundleIdentifier in CallBlockOrID
 
 ![extensionIdentifier](HelperImages/extensionIdentifier.png "extensionIdentifier")
 
-2. Database Path 
-   数据库路径
+### 2. Database Path And App Groups
+###    数据库路径和应用组
 
 DB path use the App Groups name as a part, so you should change the name.
+
 数据库路径中采用App Groups的名称作为一部分，所以别忘记修改。
+
 Click the "+" button to add your new own group, name should be "group.xxxxx".
+
 点击 + 按钮可以创建你自己的App Group，名称应该是 group.xxx 这种形式。
 
 ![groupNameSetting](HelperImages/groupNameSetting.png "groupNameSetting")
