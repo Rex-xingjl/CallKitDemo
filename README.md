@@ -31,12 +31,14 @@ well, you need modify some setting, make sure the demo can build in your iPhone.
    主应用id 和 扩展应用id
 
 Rule -> "ExtensionApp_BundleIdentifier = MainApp_BundleIdentifier + ExtensionApp_TargetName"
+
 规则：扩展应用id = 主应用id + 扩展应用的target名称
 
 ![mainAppBundleID](HelperImages/mainAppBundleID.png "mainAppBundleID")
 ![extensionAppBundleID](HelperImages/extensionAppBundleID.png "extensionAppBundleID")
 
 And also don't forget modify this ExtentionApp BundleIdentifier in CallBlockOrIDManager.m ！
+
 不要忘记修改CallBlockOrIDManager.m这个文件中的扩展应用id！
 
 ![extensionIdentifier](HelperImages/extensionIdentifier.png "extensionIdentifier")
@@ -45,7 +47,9 @@ And also don't forget modify this ExtentionApp BundleIdentifier in CallBlockOrID
    数据库路径
 
 DB path use the App Groups name as a part, so you should change the name.
+数据库路径中采用App Groups的名称作为一部分，所以别忘记修改。
 Click the "+" button to add your new own group, name should be "group.xxxxx".
+点击 + 按钮可以创建你自己的App Group，名称应该是 group.xxx 这种形式。
 
 ![groupNameSetting](HelperImages/groupNameSetting.png "groupNameSetting")
 ![groupNameIdentifier](HelperImages/groupNameIdentifier.png "groupNameIdentifier")
