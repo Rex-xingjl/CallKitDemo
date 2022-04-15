@@ -9,7 +9,7 @@
 #import "CallBlockOrIDManager.h"
 #import "ContactModel.h"
 
-#define kExtensionIdentifier @"com.Rex.NumberLabel.PhoneNumberHandler"
+#define kExtensionIdentifier ([NSString stringWithFormat:@"%@.PhoneNumberHandler", [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"]])
 #define kViewController [UIApplication sharedApplication].keyWindow.rootViewController
 
 typedef enum : NSUInteger {
@@ -58,7 +58,9 @@ typedef enum : NSUInteger {
 
 - (void)manage:(NumberManage)manage toNumber:(NSString *)number withID:(NSString *)ID complete:(void(^)(BOOL finish))block{
     NSTimeInterval interval_begin = [[NSDate date] timeIntervalSince1970];
-    [SVProgressHUD showWithStatus:@"Updating..."];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [SVProgressHUD showWithStatus:@"Updating..."];
+    });
     ContactModel * model = [[ContactModel alloc] init];
     model.phoneNumber = number;
     model.identification = ID;
@@ -77,25 +79,27 @@ typedef enum : NSUInteger {
 
     CXCallDirectoryManager *manager = [CXCallDirectoryManager sharedInstance];
     [manager reloadExtensionWithIdentifier:kExtensionIdentifier completionHandler:^(NSError * _Nullable error) {
-        [SVProgressHUD dismiss];
-        NSTimeInterval interval_end = [[NSDate date] timeIntervalSince1970];
-        NSString * check = @"please try again or check the perrmission";
-        NSString * time = [NSString stringWithFormat:@"spend time: %.1f s", interval_end-interval_begin];
-        NSString * title = !error ? @"Update Succeed ✓" : @"Update Failed X";
-        NSString * message = (manage == IDNumberManageAdd || manage == IDNumberManageDelete) ?
-        [NSString stringWithFormat:@"> %@ <\n%@", @"ID Contacts", time] :
-        [NSString stringWithFormat:@"> %@ <\n%@", @"Block Contacts", time];
-        [UIAlertController showOneActionAlert:kViewController
-                                        Title: title
-                                      Message: error ? check : message
-                                  ActionTitle:@"OK"
-                                  EnsureBlock:^{
-                                      if (!error && block) {
-                                          block(YES);
-                                      } else {
-                                          if (block) block(NO);
-                                      }
-                                  }];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [SVProgressHUD dismiss];
+            NSTimeInterval interval_end = [[NSDate date] timeIntervalSince1970];
+            NSString * check = @"please try again or check the perrmission";
+            NSString * time = [NSString stringWithFormat:@"spend time: %.1f s", interval_end-interval_begin];
+            NSString * title = !error ? @"Update Succeed ✓" : @"Update Failed X";
+            NSString * message = (manage == IDNumberManageAdd || manage == IDNumberManageDelete) ?
+            [NSString stringWithFormat:@"> %@ <\n%@", @"ID Contacts", time] :
+            [NSString stringWithFormat:@"> %@ <\n%@", @"Block Contacts", time];
+            [UIAlertController showOneActionAlert:kViewController
+                                            Title: title
+                                          Message: error ? check : message
+                                      ActionTitle:@"OK"
+                                      EnsureBlock:^{
+                                          if (!error && block) {
+                                              block(YES);
+                                          } else {
+                                              if (block) block(NO);
+                                          }
+                                      }];
+        });
     }];
 }
 

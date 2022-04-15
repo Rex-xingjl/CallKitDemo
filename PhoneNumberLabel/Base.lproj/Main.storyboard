@@ -141,7 +141,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bb1-Nt-Isf">
-                                                <rect key="frame" x="203.5" y="305.5" width="142.5" height="40"/>
+                                                <rect key="frame" x="198.5" y="305.5" width="147.5" height="40"/>
                                                 <color key="backgroundColor" red="0.2470588235" green="0.50588235290000005" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="Add">
@@ -175,7 +175,7 @@
                                                 </connections>
                                             </switch>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFA-JM-z8c">
-                                                <rect key="frame" x="31" y="305.5" width="142.5" height="40"/>
+                                                <rect key="frame" x="31" y="305.5" width="147.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="Eliminate">
                                                     <color key="titleColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
@@ -245,7 +245,7 @@
                                             <constraint firstItem="zqJ-fQ-DU7" firstAttribute="height" secondItem="Kk5-yr-Wv4" secondAttribute="height" id="gOd-pd-IVn"/>
                                             <constraint firstItem="Bb1-Nt-Isf" firstAttribute="centerY" secondItem="qFA-JM-z8c" secondAttribute="centerY" id="gjY-ll-hED"/>
                                             <constraint firstItem="zqJ-fQ-DU7" firstAttribute="top" secondItem="ywL-kU-O6K" secondAttribute="bottom" constant="15" id="h28-Xy-3rK"/>
-                                            <constraint firstItem="Bb1-Nt-Isf" firstAttribute="leading" secondItem="qFA-JM-z8c" secondAttribute="trailing" constant="30" id="jST-Jx-IC7"/>
+                                            <constraint firstItem="Bb1-Nt-Isf" firstAttribute="leading" secondItem="qFA-JM-z8c" secondAttribute="trailing" constant="20" id="jST-Jx-IC7"/>
                                             <constraint firstItem="zqJ-fQ-DU7" firstAttribute="leading" secondItem="Kk5-yr-Wv4" secondAttribute="leading" id="mGi-IF-TTE"/>
                                             <constraint firstItem="Bb1-Nt-Isf" firstAttribute="trailing" secondItem="Ars-RC-oAW" secondAttribute="trailing" id="oay-D8-iBm"/>
                                             <constraint firstItem="qFA-JM-z8c" firstAttribute="top" secondItem="ePB-ka-zJT" secondAttribute="bottom" constant="35" id="s9d-wF-C1v"/>
@@ -376,7 +376,7 @@
                                         <constraint firstItem="l62-cJ-zg3" firstAttribute="leading" secondItem="SRB-a4-wTc" secondAttribute="leading" id="AZz-Ef-FOr"/>
                                         <constraint firstItem="l62-cJ-zg3" firstAttribute="bottom" secondItem="ERk-eo-8PI" secondAttribute="bottom" id="Bo7-iD-NPE"/>
                                         <constraint firstItem="PqQ-OU-D2x" firstAttribute="top" secondItem="4wH-vz-7b0" secondAttribute="top" constant="8" id="GzG-q4-e3A"/>
-                                        <constraint firstItem="q2x-49-ZC4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PqQ-OU-D2x" secondAttribute="trailing" id="L48-5g-2Pr"/>
+                                        <constraint firstItem="q2x-49-ZC4" firstAttribute="leading" secondItem="PqQ-OU-D2x" secondAttribute="trailing" constant="10" id="L48-5g-2Pr"/>
                                         <constraint firstAttribute="bottom" secondItem="l62-cJ-zg3" secondAttribute="bottom" constant="8" id="Q3J-05-VLJ"/>
                                         <constraint firstItem="SRB-a4-wTc" firstAttribute="leading" secondItem="q2x-49-ZC4" secondAttribute="trailing" constant="40" id="YNM-GA-rVd"/>
                                         <constraint firstItem="ERk-eo-8PI" firstAttribute="leading" secondItem="q2x-49-ZC4" secondAttribute="leading" id="YUz-fW-avs"/>
@@ -458,6 +458,7 @@
                                         <constraint firstItem="ZRU-CY-DrI" firstAttribute="top" secondItem="ZBF-js-B0J" secondAttribute="bottom" constant="5" id="H5y-2Y-3Iy"/>
                                         <constraint firstItem="hX6-Hb-N5s" firstAttribute="centerY" secondItem="ZBF-js-B0J" secondAttribute="centerY" id="I7u-Ae-pku"/>
                                         <constraint firstItem="fMp-Ry-ayr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZRU-CY-DrI" secondAttribute="trailing" constant="5" id="OnW-bg-63r"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hX6-Hb-N5s" secondAttribute="trailing" constant="20" id="UM1-RS-mbY"/>
                                         <constraint firstItem="fMp-Ry-ayr" firstAttribute="leading" secondItem="hX6-Hb-N5s" secondAttribute="leading" id="Ubs-r0-Mev"/>
                                         <constraint firstItem="fMp-Ry-ayr" firstAttribute="top" secondItem="hX6-Hb-N5s" secondAttribute="bottom" constant="5" id="bwL-Uq-hq4"/>
                                         <constraint firstItem="ZBF-js-B0J" firstAttribute="leading" secondItem="WrU-Nv-czN" secondAttribute="leading" constant="15" id="mbN-bJ-fgd"/>
@@ -481,7 +482,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RIj-9z-6pT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2410" y="149"/>
+            <point key="canvasLocation" x="2345" y="149"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.2470588235" green="0.50588235290000005" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
