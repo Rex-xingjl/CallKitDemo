@@ -39,16 +39,6 @@ Rule -> "ExtensionApp_BundleIdentifier = MainApp_BundleIdentifier + ExtensionApp
 ![mainAppBundleID](HelperImages/mainAppBundleID.png "mainAppBundleID")
 ![extensionAppBundleID](HelperImages/extensionAppBundleID.png "extensionAppBundleID")
 
-~~And also don't forget modify this ExtentionApp BundleIdentifier in CallBlockOrIDManager.m ！~~
-
-~~不要忘记修改CallBlockOrIDManager.m这个文件中的扩展应用id!~~
-
-This place has change to auto bundleId, so forget it is fine。
-
-这里已经改成自动适应，可以忘了。
-
-![extensionIdentifier](HelperImages/extensionIdentifier.png "extensionIdentifier")
-
 ### 2. Database Path And App Groups
 ###    数据库路径和应用组(数据共享)
 
