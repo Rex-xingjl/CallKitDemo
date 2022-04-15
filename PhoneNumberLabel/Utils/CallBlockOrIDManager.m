@@ -9,7 +9,7 @@
 #import "CallBlockOrIDManager.h"
 #import "ContactModel.h"
 
-#define kExtensionIdentifier @"com.Rex.NumberLabel.PhoneNumberHandler"
+#define kExtensionIdentifier @"com.Rex.NumberLabel666.PhoneNumberHandler"
 #define kViewController [UIApplication sharedApplication].keyWindow.rootViewController
 
 typedef enum : NSUInteger {
@@ -81,7 +81,7 @@ typedef enum : NSUInteger {
         NSTimeInterval interval_end = [[NSDate date] timeIntervalSince1970];
         NSString * check = @"please try again or check the perrmission";
         NSString * time = [NSString stringWithFormat:@"spend time: %.1f s", interval_end-interval_begin];
-        NSString * title = !error ? @"Update Succeed √" : @"Update Failed X";
+        NSString * title = !error ? @"Update Succeed ✓" : @"Update Failed X";
         NSString * message = (manage == IDNumberManageAdd || manage == IDNumberManageDelete) ?
         [NSString stringWithFormat:@"> %@ <\n%@", @"ID Contacts", time] :
         [NSString stringWithFormat:@"> %@ <\n%@", @"Block Contacts", time];

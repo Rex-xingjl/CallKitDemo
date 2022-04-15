@@ -19,17 +19,19 @@
 + (void)showOneActionAlert:(id)target Title:(NSString *)title Message:(NSString *)message ActionTitle:(NSString *)actionTitle EnsureBlock:(EnsureBlock)ensureBlock
 {
     
-    UIAlertController * alertC = [UIAlertController alertControllerWithTitle:title ? : @""
-                                                                     message:message  ? : @""
-                                                              preferredStyle:UIAlertControllerStyleAlert];
-    [alertC addAction:[UIAlertAction actionWithTitle:actionTitle ? : @"确定"
-                                               style:UIAlertActionStyleDefault
-                                             handler:^(UIAlertAction * _Nonnull action) {
-                                                 if (ensureBlock) {
-                                                     ensureBlock();
-                                                 }
-                                             }]];
-    kPresentAlertC
+    dispatch_async(dispatch_get_main_queue(), ^{
+        UIAlertController * alertC = [UIAlertController alertControllerWithTitle:title ? : @""
+                                                                         message:message  ? : @""
+                                                                  preferredStyle:UIAlertControllerStyleAlert];
+        [alertC addAction:[UIAlertAction actionWithTitle:actionTitle ? : @"确定"
+                                                   style:UIAlertActionStyleDefault
+                                                 handler:^(UIAlertAction * _Nonnull action) {
+                                                     if (ensureBlock) {
+                                                         ensureBlock();
+                                                     }
+                                                 }]];
+        kPresentAlertC
+    });
 }
 
 + (void)showTwoActionAlert:(id)target Title:(NSString *)title Message:(NSString *)message leftTitle:(NSString *)left rightTitle:(NSString *)right EnsureBlock:(EnsureBlock)ensureBlock
@@ -56,25 +58,26 @@
 
 + (void)showTwoActionAlert:(id)target Title:(NSString *)title Message:(NSString *)message leftTitle:(NSString *)left rightTitle:(NSString *)right EnsureBlock:(EnsureBlock)ensureBlock CancelBlock:(CancelBlock)cancelBlock
 {
-    
-    UIAlertController * alertC = [UIAlertController alertControllerWithTitle:title ? : @""
-                                                                     message:message ? : @""
-                                                              preferredStyle:UIAlertControllerStyleAlert];
-    [alertC addAction:[UIAlertAction actionWithTitle:left ? : @"取消"
-                                               style:UIAlertActionStyleDefault
-                                             handler:^(UIAlertAction * _Nonnull action) {
-                                                 if (cancelBlock) {
-                                                     cancelBlock();
-                                                 }
-                                             }]];
-    [alertC addAction:[UIAlertAction actionWithTitle:right ? : @"确定"
-                                               style:UIAlertActionStyleDestructive
-                                             handler:^(UIAlertAction * _Nonnull action) {
-                                                 if (ensureBlock) {
-                                                     ensureBlock();
-                                                 }
-                                             }]];
-    kPresentAlertC
+    dispatch_async(dispatch_get_main_queue(), ^{
+        UIAlertController * alertC = [UIAlertController alertControllerWithTitle:title ? : @""
+                                                                         message:message ? : @""
+                                                                  preferredStyle:UIAlertControllerStyleAlert];
+        [alertC addAction:[UIAlertAction actionWithTitle:left ? : @"取消"
+                                                   style:UIAlertActionStyleDefault
+                                                 handler:^(UIAlertAction * _Nonnull action) {
+                                                     if (cancelBlock) {
+                                                         cancelBlock();
+                                                     }
+                                                 }]];
+        [alertC addAction:[UIAlertAction actionWithTitle:right ? : @"确定"
+                                                   style:UIAlertActionStyleDestructive
+                                                 handler:^(UIAlertAction * _Nonnull action) {
+                                                     if (ensureBlock) {
+                                                         ensureBlock();
+                                                     }
+                                                 }]];
+        kPresentAlertC
+    });
 }
 
 + (void)showTextAlert:(id)target
