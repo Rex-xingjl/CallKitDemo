@@ -9,7 +9,7 @@
 #import "CallBlockOrIDManager.h"
 #import "ContactModel.h"
 
-#define kExtensionIdentifier @"com.Rex.NumberLabel666.PhoneNumberHandler"
+#define kExtensionIdentifier @"com.Rex.NumberLabel.PhoneNumberHandler"
 #define kViewController [UIApplication sharedApplication].keyWindow.rootViewController
 
 typedef enum : NSUInteger {
