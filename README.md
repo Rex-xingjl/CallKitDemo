@@ -10,7 +10,7 @@ A demo to show the intact process to add indentifications for phonenumber or blo
 2. If block a phonenumber, you won't see the incoming call.
 3. Open App Groups to shared the data between main App and the extension App. 
 4. The phonenumbers add to CXCallDirectoryExtensionContext must have country code otherwise it's useless.
-5. Before add to CXCallDirectoryExtensionContext, the phonenumbers need to sort by ascending and remove the duplicates. (**Notice: phonenumbers change to Int before Sorted! **)
+5. Before add to CXCallDirectoryExtensionContext, the phonenumbers need to sort by ascending and remove the duplicates. **Notice: phonenumbers change to Int before Sorted!**
 6. The maximum quantity can be added between 1 and 2 million. I try to add 1 million succeeded but 2 million failed.
 7. Currently we can only update it full amount but can't incremental updates.
 
