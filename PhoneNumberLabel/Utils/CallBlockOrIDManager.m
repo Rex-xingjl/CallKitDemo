@@ -8,6 +8,7 @@
 
 #import "CallBlockOrIDManager.h"
 #import "ContactModel.h"
+#import <CallKit/CallKit.h>
 
 #define kExtensionIdentifier ([NSString stringWithFormat:@"%@.PhoneNumberHandler", [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"]])
 #define kViewController [UIApplication sharedApplication].keyWindow.rootViewController
@@ -109,12 +110,16 @@ typedef enum : NSUInteger {
         if (!error) {
             switch (enabledStatus) {
                 case CXCallDirectoryEnabledStatusEnabled:
-                    if (block) block(YES); break;
+                    if (block) block(YES);
+                    break;
                 case CXCallDirectoryEnabledStatusUnknown:
-                    [SVProgressHUD showInfoWithStatus:@"Unknown permission, please reinstall the app"]; break;
+                    [SVProgressHUD showInfoWithStatus:@"Unknown permission, please reinstall the app"];
+                    break;
                 case CXCallDirectoryEnabledStatusDisabled:
-                    [self openSetting]; break;
-                default: break;
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [self openSetting];
+                    });
+                    break;
             }
         } else {
             [UIAlertController showOneActionAlert:kViewController
@@ -129,9 +134,14 @@ typedef enum : NSUInteger {
 
 - (void)openSetting {
     [UIAlertController showTwoActionAlert:kViewController Title:@"Permission" Message:@"Need Permisstion, please open it:\nSetting->Phone->Call Blocking & Indentification" leftTitle:@"Cancel" rightTitle:@"To Open" EnsureBlock:^{
-        NSURL *url = [NSURL URLWithString:@"app-Prefs:root=Phone"];
-        if ([[UIApplication sharedApplication] canOpenURL:url]) {
-            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
+        if (@available(iOS 13.4, *)) {
+            CXCallDirectoryManager *manager = [CXCallDirectoryManager sharedInstance];
+            [manager openSettingsWithCompletionHandler:^(NSError * _Nullable error) {}];
+        } else {
+            NSURL *url = [NSURL URLWithString:@"app-Prefs:root=Phone"];
+            if ([[UIApplication sharedApplication] canOpenURL:url]) {
+                [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
+            }
         }
     } CancelBlock:^{
         [SVProgressHUD showInfoWithStatus:@"You can't use the function without permission"];

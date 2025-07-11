@@ -27,7 +27,7 @@
 - (FMDatabaseQueue *)dbQueue {
   if (!_dbQueue) {
       
-      NSURL *containerURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.RexLocalGroup"];
+      NSURL *containerURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.rex.test"];
       containerURL = [containerURL URLByAppendingPathComponent:@"Library/"];
       NSString * dbPath = [NSString stringWithFormat:@"%@/%@",containerURL.absoluteString, @"LocalNumberDB.sqlite"];
       _dbQueue = [FMDatabaseQueue databaseQueueWithPath:dbPath];
